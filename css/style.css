@@ -1,0 +1,36 @@
+body{
+    position: relative;
+    background-color: snow;
+}
+header,footer {
+    background-color: salmon;
+}
+header {
+    display: block;
+    position: sticky;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    height: 200px;
+    margin: 0px;
+}
+nav{
+    float: right;
+    position: relative;
+}
+.navList{
+    display: inline;
+    padding: 5px;
+}
+footer {
+    display: block;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+}
+main{
+    position: absolute;
+    top: 200px;
+    height: 1500px;
+}
