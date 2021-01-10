@@ -1,0 +1,17 @@
+header,footer {
+    background-color: salmon;
+}
+header {
+    display: block;
+    position:fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+}
+footer {
+    display: block;
+    position:fixed;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+}
