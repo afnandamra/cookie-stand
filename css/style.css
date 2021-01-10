@@ -1,5 +1,6 @@
 body{
     position: relative;
+    background-color: snow;
 }
 header,footer {
     background-color: salmon;
@@ -11,6 +12,7 @@ header {
     right: 0px;
     left: 0px;
     height: 200px;
+    margin: 0px;
 }
 nav{
     float: right;
