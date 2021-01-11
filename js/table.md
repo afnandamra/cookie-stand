@@ -1,5 +1,5 @@
 <table>
-    <tr>
+    <thead>
         <th></th>
         <th>6 am</th>
         <th>7 am</th>
@@ -16,7 +16,8 @@
         <th>6 pm</th>
         <th>7 pm</th>
         <th>daily location total</th>
-    </tr>
+    </thead>
+    <tbody>
     <tr>
         <th>seattle</th>
         <td>cell</td>
@@ -107,6 +108,8 @@
         <td>cell</td>
         <td>cell</td>
     </tr>
+    </tbody>
+    <tfoot>
     <tr>
         <th>total</th>
         <td>cell</td>
@@ -125,4 +128,5 @@
         <td>cell</td>
         <td>cell</td>
     </tr>
+    </tfoot>
 </table>
