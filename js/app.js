@@ -23,7 +23,7 @@ var seattle = {
     getCusPerHour: function () {
         for (var m = 0; m < openHour.length; m++) {
             this.avgCusPerHour.push(randomCus(this.minCusPerHour, this.maxCusPerHour));
-            console.log(this.avgCusPerHour[m]);
+            // console.log(this.avgCusPerHour[m]);
         }
         return this.avgCusPerHour;
     },
@@ -31,13 +31,13 @@ var seattle = {
     totalCookies: 0,
     getAvgCookiesPerHour: function () {
         for (var k = 0; k < openHour.length; k++) {
-            this.avgCookiesPerHour.push(Math.floor(this.avgCusPerHour[k] * this.avgCookiePerCus));
+            this.avgCookiesPerHour.push(Math.ceil(this.avgCusPerHour[k] * this.avgCookiePerCus));
             this.totalCookies = this.totalCookies + this.avgCookiesPerHour[k];
         }
-        for (var l = 0; l < openHour.length; l++) {
-            console.log(openHour[l], ': ', this.avgCookiesPerHour[l]);
-        }
-        console.log('total: ', this.totalCookies);
+        // for (var l = 0; l < openHour.length; l++) {
+        //     console.log(openHour[l], ': ', this.avgCookiesPerHour[l]);
+        // }
+        // console.log('total: ', this.totalCookies);
         return this.avgCookiesPerHour, this.totalCookies;
     }
 }
@@ -51,7 +51,7 @@ var tokyo = {
     getCusPerHour: function () {
         for (var m = 0; m < openHour.length; m++) {
             this.avgCusPerHour.push(randomCus(this.minCusPerHour, this.maxCusPerHour));
-            console.log(this.avgCusPerHour[m]);
+            // console.log(this.avgCusPerHour[m]);
         }
         return this.avgCusPerHour;
     },
@@ -59,13 +59,13 @@ var tokyo = {
     totalCookies: 0,
     getAvgCookiesPerHour: function () {
         for (var k = 0; k < openHour.length; k++) {
-            this.avgCookiesPerHour.push(Math.floor(this.avgCusPerHour[k] * this.avgCookiePerCus));
+            this.avgCookiesPerHour.push(Math.ceil(this.avgCusPerHour[k] * this.avgCookiePerCus));
             this.totalCookies = this.totalCookies + this.avgCookiesPerHour[k];
         }
-        for (var l = 0; l < openHour.length; l++) {
-            console.log(openHour[l], ': ', this.avgCookiesPerHour[l]);
-        }
-        console.log('total: ', this.totalCookies);
+        // for (var l = 0; l < openHour.length; l++) {
+        //     console.log(openHour[l], ': ', this.avgCookiesPerHour[l]);
+        // }
+        // console.log('total: ', this.totalCookies);
         return this.avgCookiesPerHour, this.totalCookies;
     }
 }
@@ -79,7 +79,7 @@ var dubai = {
     getCusPerHour: function () {
         for (var m = 0; m < openHour.length; m++) {
             this.avgCusPerHour.push(randomCus(this.minCusPerHour, this.maxCusPerHour));
-            console.log(this.avgCusPerHour[m]);
+            // console.log(this.avgCusPerHour[m]);
         }
         return this.avgCusPerHour;
     },
@@ -87,13 +87,13 @@ var dubai = {
     totalCookies: 0,
     getAvgCookiesPerHour: function () {
         for (var k = 0; k < openHour.length; k++) {
-            this.avgCookiesPerHour.push(Math.floor(this.avgCusPerHour[k] * this.avgCookiePerCus));
+            this.avgCookiesPerHour.push(Math.ceil(this.avgCusPerHour[k] * this.avgCookiePerCus));
             this.totalCookies = this.totalCookies + this.avgCookiesPerHour[k];
         }
-        for (var l = 0; l < openHour.length; l++) {
-            console.log(openHour[l], ': ', this.avgCookiesPerHour[l]);
-        }
-        console.log('total: ', this.totalCookies);
+        // for (var l = 0; l < openHour.length; l++) {
+        //     console.log(openHour[l], ': ', this.avgCookiesPerHour[l]);
+        // }
+        // console.log('total: ', this.totalCookies);
         return this.avgCookiesPerHour, this.totalCookies;
     }
 }
@@ -107,7 +107,7 @@ var paris = {
     getCusPerHour: function () {
         for (var m = 0; m < openHour.length; m++) {
             this.avgCusPerHour.push(randomCus(this.minCusPerHour, this.maxCusPerHour));
-            console.log(this.avgCusPerHour[m]);
+            // console.log(this.avgCusPerHour[m]);
         }
         return this.avgCusPerHour;
     },
@@ -115,13 +115,13 @@ var paris = {
     totalCookies: 0,
     getAvgCookiesPerHour: function () {
         for (var k = 0; k < openHour.length; k++) {
-            this.avgCookiesPerHour.push(Math.floor(this.avgCusPerHour[k] * this.avgCookiePerCus));
+            this.avgCookiesPerHour.push(Math.ceil(this.avgCusPerHour[k] * this.avgCookiePerCus));
             this.totalCookies = this.totalCookies + this.avgCookiesPerHour[k];
         }
-        for (var l = 0; l < openHour.length; l++) {
-            console.log(openHour[l], ': ', this.avgCookiesPerHour[l]);
-        }
-        console.log('total: ', this.totalCookies);
+        // for (var l = 0; l < openHour.length; l++) {
+        //     console.log(openHour[l], ': ', this.avgCookiesPerHour[l]);
+        // }
+        // console.log('total: ', this.totalCookies);
         return this.avgCookiesPerHour, this.totalCookies;
     }
 }
@@ -135,7 +135,7 @@ var lima = {
     getCusPerHour: function () {
         for (var m = 0; m < openHour.length; m++) {
             this.avgCusPerHour.push(randomCus(this.minCusPerHour, this.maxCusPerHour));
-            console.log(this.avgCusPerHour[m]);
+            // console.log(this.avgCusPerHour[m]);
         }
         return this.avgCusPerHour;
     },
@@ -143,13 +143,13 @@ var lima = {
     totalCookies: 0,
     getAvgCookiesPerHour: function () {
         for (var k = 0; k < openHour.length; k++) {
-            this.avgCookiesPerHour.push(Math.floor(this.avgCusPerHour[k] * this.avgCookiePerCus));
+            this.avgCookiesPerHour.push(Math.ceil(this.avgCusPerHour[k] * this.avgCookiePerCus));
             this.totalCookies = this.totalCookies + this.avgCookiesPerHour[k];
         }
-        for (var l = 0; l < openHour.length; l++) {
-            console.log(openHour[l], ': ', this.avgCookiesPerHour[l]);
-        }
-        console.log('total: ', this.totalCookies);
+        // for (var l = 0; l < openHour.length; l++) {
+        //     console.log(openHour[l], ': ', this.avgCookiesPerHour[l]);
+        // }
+        // console.log('total: ', this.totalCookies);
         return this.avgCookiesPerHour, this.totalCookies;
     }
 }
