@@ -173,8 +173,8 @@ for (var o = 0; o < locations.length; o++) {
         locationList = document.createElement('li');
         locationList.setAttribute('class', 'hours');
         locationCookies.appendChild(locationList);
-        locationList.textContent = (openHour[n] + ': ' + locations[o].avgCookiesPerHour[n]);
+        locationList.textContent = (openHour[n] + ': ' + locations[o].avgCookiesPerHour[n] + ' cookies');
     }
-    locationList.textContent = ('total: ' + locations[o].totalCookies);
+    locationList.textContent = ('total: ' + locations[o].totalCookies + ' cookies');
 
 }
