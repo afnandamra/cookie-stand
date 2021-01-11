@@ -72,7 +72,7 @@ footer();
 
 // calling 
 for (var i = 0; i < locations.length; i++) {
-    console.log(locations[i].name, locations[i].avgCookiesPerHour);
+    // console.log(locations[i].name, locations[i].avgCookiesPerHour);
     locations[i].getCusPerHour();
     locations[i].getAvgCookiesPerHour();
     locations[i].render();
@@ -121,7 +121,21 @@ function cellData() {
     }
 }
 
+// //testing
+// var dataCell = [];
+// var dataTotal = 0;
+// for (var z = 1; z < openHour.length + 1; z++) {
+//     var hourCol = 0;
+//     for (var y = 0; y < locations.length; y++) {
+//         hourCol = hourCol + locations[y].avgCookiesPerHour[z - 1];
+//     }
+//     dataCell.push(hourCol);
+//     dataTotal = dataTotal + hourCol;
+//     console.log(hourCol);
+// }
+// console.log(dataCell, dataTotal);
 
+// console.log(locations[0].avgCookiesPerHour[3]);
 
 // Footer
 function footer() {
@@ -133,43 +147,20 @@ function footer() {
     footRowCells.push(document.createElement('td'));
     footRowCells[0].textContent = 'Totals';
     tableRow.appendChild(footRowCells[0]);
-    for (var j = 1; j <= openHour.length; j++) {
-        footRowCells.push(document.createElement('td'));
-        footRowCells[j].textContent = totalsRow()[j - 1];
-        tableRow.appendChild(footRowCells[j]);
-    }
-    // var totalDaily = document.createElement('td');
-    // totalDaily.textContent = this.totalCookies;
-    // tableRow.appendChild(totalDaily);
-}
-// // for (var v = 0; v < total.length; v++) {
-// //     var totalCell = document.createElement('td');
-// //     totalCell.textContent = totalsArr[v];
-// //     totalsRow.appendChild(totalCell);
-// // }
-
-function totalsRow() {
-    var totalPerHour = [];
-    // var totalTotals =0;
-    for (var v = 0; v < locations.length; v++) {
-        var total = 0;
-        totalPerHour.push(total + seattle.avgCookiesPerHour[0]);
-    }
-    return totalPerHour;
-}
-
-var totalsArr = getTotalPerhour()[0];
-var totalsSum = getTotalPerhour()[1];
-function getTotalPerhour() {
-    var totalPerHour = [];
-    var sumTotalPerHour = 0;
-    for (var z = 0; z < salmonObjs[0].times.length; z++) {
-        var perHour = 0;
-        for (var y = 0; y < salmonObjs.length; y++) {
-            perHour = perHour + salmonObjs[y].cookiesRandomNums[z];
+    // //testing
+    // console.log(locations[0].avgCookiesPerHour);
+    // console.log(locations[0].avgCookiesPerHour[3]);
+    var dataCell = [];
+    var dataTotal = 0;
+    for (var z = 1; z < openHour.length; z++) {
+        var hourCol = 0;
+        for (var y = 0; y < locations.length; y++) {
+            hourCol = hourCol + locations[y].avgCookiesPerHour[z - 1];
         }
-        totalPerHour.push(perHour);
-        sumTotalPerHour = sumTotalPerHour + perHour;
+        dataCell.push(hourCol);
+        dataTotal = dataTotal + hourCol;
+        footRowCells.push(document.createElement('td'));
+        footRowCells[z].textContent = dataCell[z];
+        tableRow.appendChild(footRowCells[z]);
     }
-    return [totalPerHour, sumTotalPerHour];
 }
