@@ -1,9 +1,8 @@
 body{
     position: relative;
-    background-color: snow;
 }
 header,footer {
-    background-color: salmon;
+    background-color: #70af85;
 }
 header {
     display: block;
@@ -11,26 +10,218 @@ header {
     top: 0px;
     right: 0px;
     left: 0px;
-    height: 200px;
-    margin: 0px;
+    height: 100px;
+    max-width: 100%;
+    margin: auto;
+    z-index: 2;
+}
+.shadow {
+	margin-top: 50px;
+    overflow: hidden;
+    height: 20px;
+}
+.shadow:after {
+    content: '';
+    display: block;
+    width: 90%;
+    height: 30px;
+	margin: -30px auto 0;
+    border-radius: 120px / 10px;
+    box-shadow: 0px 0px 8px rgba(16, 54, 4, 0.6);
+}
+header>img{
+    height: 50px;
+    display: block;
+    position: relative;
+    top: 25px;
+    left: 100px;
+}
+header>h1{
+    position: absolute;
+    display: block;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    top: 35px;
+    right: 100px;
+    left: 100px;
+    font-size: 30px;
 }
 nav{
-    float: right;
-    position: relative;
+    position: absolute;
+    display: block;
+    text-align: center;
+    top: 45px;
+    right: 100px;
 }
 .navList{
     display: inline;
     padding: 5px;
+    font-family: serif;
+    font-size: 15px;
+    font-weight: lighter;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    border: 1px solid #325c40;
+    padding: 5px;
+    color: #f0e2d0;
+}
+main{
+    position: relative;
+    padding: 60px;
+    height: 1600px;
+}
+main>h1{
+    position: relative;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    width: 30%;
+    height: 50px;
+    padding: 10px;
+    margin: auto;
+    border: 5px solid #aa8976;
+    background-color: #f0e2d08a;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    font-size: 30px;
+    z-index: 1;
+}
+#mainP{
+    display: block;
+    width: 35%;
+    text-align: center;
+    padding: 30px;
+    margin: auto;
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+}
+.bold{
+    line-height: 40px;
+    font-weight: bolder;
+}
+#uglyFish{
+    display: block;
+    width: 50%;
+    margin: auto;
+    padding: 30px;
+    padding-bottom: 100px;
+}
+#hours, #locations, #contact, #order{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 80px;
+    height: 200px;
+    margin-bottom: 50px;
+}
+#hours>h3, #locations>h3, #contact>h3, #order>h3{
+    font-size: 20px;
+    font-family: sans-serif;
+    width: 150px;
+    border: 2px solid #aa8976;
+    background-color: #f0e2d08a;
+    border-radius: 15px;
+    text-align: center;
+    padding: 7px;
+    margin: 10px;
+}
+#hours>p, #locations>p, #contact>p, #order>p{
+    text-align: center;
+    font-family: serif;
+    font-size: 15px;
+    line-height: 20px;
+}
+#order>p>img{
+    height: 100px;
+}
+.photos{
+    display: block;
+    width: 75%;
+    margin: auto;
+}
+.photos>h2{
+    font-family: serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #325c40;
+}
+.photos>div>img{
+    height: 200px;
+}
+.photos>div>h3{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 25px;
+}
+#hand,#family{
+    float:left;
+    margin: 30px;
+}
+#machine{
+    display: inline-block;
+    margin: 30px;
+}
+#family>img{
+    height: 100%;
+    width: 50%;
+    margin: auto;
+}
+#family>p{
+    font-family: serif;
+    font-size: 15px;
+    height: 200px;
+    margin-top: 50px;
+    padding-left: 30px;
+    overflow-y:scroll;
 }
 footer {
-    display: block;
     position: fixed;
+    height: 50px;
     bottom: 0px;
     right: 0px;
     left: 0px;
 }
-main{
-    position: absolute;
-    top: 200px;
-    height: 1500px;
+footer>h3{
+    display: block;
+    width: 500px;
+    padding: 5px;
+    font-family: serif;
+    font-size: 15px;
+    font-weight: lighter;
+    text-align: center;
+    margin: auto;
+    padding-top: 15px;
+}
+#mainId{
+    height: 300px;
+}
+section>h3{
+    font-family: serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #325c40;
+    text-align: center;
+    display: block;
+    width: 400px;
+    margin: auto;
+}
+section>table{
+    display: block;
+    width: 1000 px;
+    margin: auto;
+}
+th{
+    font-size: 20px;
+    /* font-family: sans-serif;
+    font-weight: bold;
+    text-align: center; */
 }
