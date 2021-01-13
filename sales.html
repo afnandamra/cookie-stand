@@ -30,19 +30,19 @@
                 <legend>Add New Location</legend>
                 <label for="shopName">Location Name: </label>
                 <br>
-                <input type="text" name="shopName" id="shopName">
+                <input type="text" required name="shopName" id="shopName">
                 <br>
                 <label for="minCus">Minimum Customurs/Hour: </label>
                 <br>
-                <input type="number" name="minCus" id="minCus">
+                <input type="number" required min="1" name="minCus" id="minCus">
                 <br>
                 <label for="maxCus">Maximum Customurs/Hour: </label>
                 <br>
-                <input type="number" name="maxCus" id="maxCus">
+                <input type="number" required name="maxCus" id="maxCus">
                 <br>
                 <label for="avgCookies">Average Cookies/Sale: </label>
                 <br>
-                <input type="number" step=".1" name="avgCookies" id="avgCookies">
+                <input type="number" step=".1" required name="avgCookies" id="avgCookies">
                 <input type="submit" value="submit" id="submit">
             </fieldset>
         </form>
