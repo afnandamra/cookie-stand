@@ -184,7 +184,7 @@ main>h1{
     overflow-y:scroll;
 }
 footer {
-    position: fixed;
+    position: absolute;
     height: 50px;
     bottom: 0px;
     right: 0px;
@@ -202,7 +202,7 @@ footer>h3{
     padding-top: 15px;
 }
 #mainId{
-    height: 300px;
+    height: 447px;
 }
 section>h3{
     font-family: serif;
@@ -215,13 +215,36 @@ section>h3{
     margin: auto;
 }
 section>table{
-    display: block;
     width: 1000 px;
     margin: auto;
+    margin-top: 50px;
+}
+thead{
+    border-bottom: 1px solid #aa8976;
+}
+tfoot{
+    background-color: white;
+    border-top: 1px solid #aa8976;
 }
 th{
-    font-size: 20px;
-    /* font-family: sans-serif;
+    color: #aa8976;
+    background-color: #f0e2d0;
+    font-size: 15px;
+    padding: 7px;
+    font-family: sans-serif;
     font-weight: bold;
-    text-align: center; */
+    text-align: center;
+}
+tbody>tr>th:first-child, tbody>tr>th:last-child{
+    background-color: white;
+}
+td{
+    text-align: center;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+tfoot>tr>th:last-child{
+    color:#463227;
+    text-decoration: underline;
+    /* font-size: 20px; */
 }
