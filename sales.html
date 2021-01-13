@@ -24,8 +24,31 @@
     </header>
     <main id="mainId">
         <!-- js sales here -->
+
+        <form action="" id="formSection">
+            <fieldset>
+                <legend>Add New Location</legend>
+                <label for="shopName">Location Name: </label>
+                <br>
+                <input type="text" name="shopName" id="shopName">
+                <br>
+                <label for="minCus">Minimum Customurs/Hour: </label>
+                <br>
+                <input type="number" name="minCus" id="minCus">
+                <br>
+                <label for="maxCus">Maximum Customurs/Hour: </label>
+                <br>
+                <input type="number" name="maxCus" id="maxCus">
+                <br>
+                <label for="avgCookies">Average Cookies/Sale: </label>
+                <br>
+                <input type="number" step=".1" name="avgCookies" id="avgCookies">
+                <input type="submit" value="submit" id="submit">
+            </fieldset>
+        </form>
     </main>
-    <footer>
+
+    <footer id="salesFooter">
         <h3>2021. All rights reserved. Privacy Policy</h3>
     </footer>
     <script src="js/app.js"></script>

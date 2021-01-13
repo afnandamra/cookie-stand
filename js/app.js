@@ -82,21 +82,15 @@ tableName.textContent = 'Salmon Cookie Sales';
 locationSection.appendChild(tableName);
 var locationTable = document.createElement('table');
 locationSection.appendChild(locationTable);
-
+// form rendering
+var newSection = document.createElement('section');
+parentSec.appendChild(newSection);
+var form = document.getElementById('formSection');
+newSection.append(form);
 // rendering function call
 header();
 cellData();
 
-
-
-// calling 
-for (var i = 0; i < locations.length; i++) {
-    // console.log(locations[i].name, locations[i].avgCookiesPerHour);
-    locations[i].getCusPerHour();
-    locations[i].getAvgCookiesPerHour();
-    locations[i].render();
-}
-footer();
 
 // table rendering
 // Header
@@ -152,3 +146,40 @@ function footer() {
     grandTotalCell.textContent = grandTotal;
     tableRow.appendChild(grandTotalCell);
 }
+
+// calling 
+
+for (var i = 0; i < locations.length; i++) {
+    console.log(locations[i].name, locations[i].avgCookiesPerHour);
+    locations[i].getCusPerHour();
+    locations[i].getAvgCookiesPerHour();
+    locations[i].render();
+}
+footer();
+
+// form event
+
+form = addEventListener('submit', newSubmit);
+
+function newSubmit(event) {
+    event.preventDefault();
+
+    var newName = event.target.shopName.value;
+    var newMin = parseInt(event.target.minCus.value);
+    var newMax = parseInt(event.target.maxCus.value);
+    var newAvg = event.target.avgCookies.value;
+
+    new Shop(newName, newMin, newMax, newAvg);
+
+    locationTable.innerHTML = '';
+    header();
+    cellData();
+    for (var i = 0; i < locations.length; i++) {
+        locations[i].avgCookiesPerHour = [];
+        locations[i].getCusPerHour();
+        locations[i].getAvgCookiesPerHour();
+        locations[i].render();
+    }
+    footer();
+}
+
