@@ -1,8 +1,8 @@
-# LAB 09 - Add a form to the cookie stand project
+# LAB 10b - Finish the salmon cookie stand project
 
 ## Cookie Stand project
 
-This project is to make a website for aPat's Salmon Cookie Stand to calculate how many cookies will he need to make daily.
+This project is to make a website for Pat's Salmon Cookie Stand to calculate how many cookies will he need to make daily.
 
 ### Author: Afnan Damra
 
@@ -16,4 +16,4 @@ It went very well, and was fun!
 * What observations or questions do you have about what you’ve learned so far?
 I don't have any observation so far. I'm just having fun.
 * How long did it take you to complete this assignment? And, before you started, how long did you think it would take you to complete this assignment?
-It took an hour and a half, I thought it would take more than that.
+It took a few minutes, as almost everything was already done.
