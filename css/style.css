@@ -78,7 +78,7 @@ a:hover{
 main{
     position: relative;
     padding: 60px;
-    height: 1600px;
+    height: 1800px;
 }
 main>h1{
     position: relative;
@@ -187,7 +187,7 @@ main>h1{
     overflow-y:scroll;
 }
 footer {
-    position: absolute;
+    position: static;
     height: 50px;
     bottom: 0px;
     right: 0px;
